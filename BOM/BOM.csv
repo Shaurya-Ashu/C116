@@ -10,9 +10,9 @@ Item No.,Item,Description,Quantity,Price Per Unit ($),Total Price ($),Link
 9,U3,ToF Distance Sensor VL53L0X LGA-12 - STMicro,1,1.5000,1.5000,https://www.lcsc.com/product-detail/C2929940.html
 10,U4-U7,RGB LED WS2812B-compatible 1x1mm - XL-1010RGBC-2812B,4,0.0112,0.0448,https://www.lcsc.com/product-detail/C5349953.html
 11,USB1,USB-C Mid-Mount Connector - G-Switch GT-USB-7047A,1,0.0308,0.0308,https://www.lcsc.com/product-detail/C963216.html
-12,PCB,Custom 4-Layer PCB - JLCPCB (5 pcs),5,2.0000,10.0000,
+12,PCB,Custom 4-Layer PCB - JLCPCB (5 pcs),12,2.0000,60.0000,
 13,CASE,3D-Printed Enclosure / Custom Case (1 pc),1,5.0000,5.0000,
 ,,,,,,
 ,,Components Subtotal,,,$2.2470,
-,,PCB + Case,,,$15.0000,
-,,GRAND TOTAL,,,$17.2470,
+,,PCB + Case,,,$65.0000,
+,,GRAND TOTAL,,,$67.2470,
