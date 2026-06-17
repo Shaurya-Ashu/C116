@@ -1,0 +1,18 @@
+Item No.,Item,Description,Quantity,Price Per Unit ($),Total Price ($),Link
+1,C1 C3,Capacitor 1uF 0201 X5R 10V - Walsin 0201X105M6R3CT,2,0.0003,0.0006,https://www.lcsc.com/product-detail/C295898.html
+2,C2,Capacitor 100nF 0201 X7R 50V - muRata GRM033C71C104KE14J,1,0.0014,0.0014,https://www.lcsc.com/product-detail/C2184667.html
+3,R1,Resistor 1k 0201 5% - LIZ CR0201JH0102G,1,0.0002,0.0002,https://www.lcsc.com/product-detail/C100150.html
+4,R2 R3,Resistor 2k 0201 5% - LIZ CR0201JH0202G,2,0.0002,0.0004,https://www.lcsc.com/product-detail/C100158.html
+5,R4 R5,Resistor 5.1k 0201 5% - YAGEO RC0201JR-075K1L (USB-C CC pull-down),2,0.0002,0.0004,https://www.lcsc.com/product-detail/C163490.html
+6,SW1 SW2,Tactile Switch 2.5x1.6mm SMD - G-Switch GT-TC194A-H0055-L1,2,0.0227,0.0454,https://www.lcsc.com/product-detail/C41398745.html
+7,U1,MCU STM32F042T6Y6TR Cortex-M0 48MHz WLCSP-36 - ST,1,0.6087,0.6087,https://www.lcsc.com/product-detail/C2054374.html
+8,U2,LDO 3.3V 300mA X2SON-4 - TI TLV74333PDQNR,1,0.0143,0.0143,https://www.lcsc.com/product-detail/C469880.html
+9,U3,ToF Distance Sensor VL53L0X LGA-12 - STMicro,1,1.5000,1.5000,https://www.lcsc.com/product-detail/C2929940.html
+10,U4-U7,RGB LED WS2812B-compatible 1x1mm - XL-1010RGBC-2812B,4,0.0112,0.0448,https://www.lcsc.com/product-detail/C5349953.html
+11,USB1,USB-C Mid-Mount Connector - G-Switch GT-USB-7047A,1,0.0308,0.0308,https://www.lcsc.com/product-detail/C963216.html
+12,PCB,Custom 4-Layer PCB - JLCPCB (5 pcs),5,2.0000,10.0000,
+13,CASE,3D-Printed Enclosure / Custom Case (1 pc),1,5.0000,5.0000,
+,,,,,,
+,,Components Subtotal,,,$2.2470,
+,,PCB + Case,,,$15.0000,
+,,GRAND TOTAL,,,$17.2470,
