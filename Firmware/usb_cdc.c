@@ -1,15 +1,3 @@
-/**
- * usb_cdc.c — USB CDC-ACM implementation for STM32F042
- *
- * Adapted from libopencm3 USB CDC example.
- * VID: 0x0483 (STMicro), PID: 0x5740 (CDC ACM)
- *
- * Endpoints:
- *   EP1 IN  — CDC notification (interrupt)
- *   EP2 IN  — CDC data TX  (bulk)
- *   EP2 OUT — CDC data RX  (bulk)
- */
-
 #include "usb_cdc.h"
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
@@ -17,7 +5,7 @@
 #include <libopencm3/usb/cdc.h>
 #include <string.h>
 
-/* ── USB descriptors ─────────────────────────────────────────────────────── */
+
 static const struct usb_device_descriptor dev_desc = {
     .bLength            = USB_DT_DEVICE_SIZE,
     .bDescriptorType    = USB_DT_DEVICE,
@@ -138,7 +126,7 @@ static const struct usb_config_descriptor config_desc = {
     .bConfigurationValue = 1,
     .iConfiguration      = 0,
     .bmAttributes        = 0x80,
-    .bMaxPower           = 0x32,   /* 100 mA */
+    .bMaxPower           = 0x32,   
     .interface           = ifaces,
 };
 
@@ -148,12 +136,9 @@ static const char *usb_strings[] = {
     "00000001",
 };
 
-/* ── State ───────────────────────────────────────────────────────────────── */
 static uint8_t  usbd_control_buf[128];
 static usbd_device *_usbd_dev = NULL;
 static int      _connected    = 0;
-
-/* ── CDC control request handler ─────────────────────────────────────────── */
 static enum usbd_request_return_codes
 cdc_control_request(usbd_device *dev,
                     struct usb_setup_data *req,
@@ -164,7 +149,7 @@ cdc_control_request(usbd_device *dev,
 
     switch (req->bRequest) {
     case USB_CDC_REQ_SET_CONTROL_LINE_STATE:
-        _connected = req->wValue & 1;   /* DTR bit */
+        _connected = req->wValue & 1;  
         return USBD_REQ_HANDLED;
     case USB_CDC_REQ_SET_LINE_CODING:
         return USBD_REQ_HANDLED;
@@ -172,17 +157,16 @@ cdc_control_request(usbd_device *dev,
     return USBD_REQ_NOTSUPP;
 }
 
-/* ── RX callback (host → device) ─────────────────────────────────────────── */
+
 static void cdc_rx_cb(usbd_device *dev, uint8_t ep)
 {
     (void)ep;
     char buf[64];
     uint16_t len = usbd_ep_read_packet(dev, 0x01, buf, 64);
-    /* Echo back to host */
     if (len) usbd_ep_write_packet(dev, 0x82, buf, len);
 }
 
-/* ── Set config callback ──────────────────────────────────────────────────── */
+
 static void cdc_set_config(usbd_device *dev, uint16_t wValue)
 {
     (void)wValue;
@@ -196,10 +180,9 @@ static void cdc_set_config(usbd_device *dev, uint16_t wValue)
         cdc_control_request);
 }
 
-/* ── Public API ──────────────────────────────────────────────────────────── */
+
 usbd_device *usb_cdc_init(void)
 {
-    /* PA11 = USB_DM (C2), PA12 = USB_DP (A1) — set as AF14 for USB */
     rcc_periph_clock_enable(RCC_GPIOA);
     gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE, GPIO11 | GPIO12);
     gpio_set_af(GPIOA, GPIO_AF2, GPIO11 | GPIO12);
@@ -218,7 +201,6 @@ void usb_cdc_send(const char *str)
 {
     if (!_usbd_dev || !_connected) return;
     uint16_t len = (uint16_t)strlen(str);
-    /* Send in 64-byte chunks */
     while (len > 0) {
         uint16_t chunk = len > 64 ? 64 : len;
         usbd_ep_write_packet(_usbd_dev, 0x82, str, chunk);
