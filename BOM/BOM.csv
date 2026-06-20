@@ -11,8 +11,7 @@ Item No.,Item,Description,Quantity,Price Per Unit ($),Total Price ($),Link
 10,U4-U7,RGB LED WS2812B-compatible 1x1mm - XL-1010RGBC-2812B,4,0.0112,0.0448,https://www.lcsc.com/product-detail/C5349953.html
 11,USB1,USB-C Mid-Mount Connector - G-Switch GT-USB-7047A,1,0.0308,0.0308,https://www.lcsc.com/product-detail/C963216.html
 12,PCB,Custom 4-Layer PCB - JLCPCB (5 pcs),12,2.0000,60.0000,
-13,CASE,3D-Printed Enclosure / Custom Case (1 pc),1,5.0000,5.0000,
 ,,,,,,
 ,,Components Subtotal,,,$2.2470,
-,,PCB + Case,,,$65.0000,
-,,GRAND TOTAL,,,$67.2470,
+,,PCB ,,,$60.0000,
+,,GRAND TOTAL,,,$62.2470,
