@@ -7,7 +7,7 @@ A tiny tine MCU. It is powered by STM 32F0 micro controller and offers a built-i
 ![EasyEDA](https://img.shields.io/badge/EasyEDA-%20?style=for-the-badge&logo=Easyeda&color=%230000FF)
 ![Static Badge](https://img.shields.io/badge/stmicroelectronics-%20?style=for-the-badge&logo=stmicroelectronics&logoColor=%23000435&color=%23FFFF00&link=https%3A%2F%2Fwww.st.com%2Fcontent%2Fst_com%2Fen.html)
 ![AutoDesk](https://img.shields.io/badge/autodesk-%23000000.svg?style=for-the-badge&logo=autodesk&logoColor=white)
-[![License: CERN-OHL-S](https://img.shields.io/badge/License-CERN--OHL--S%20v2-red)]([https://ohwr.org/cern_ohl_s_v2](https://spdx.org/licenses/CERN-OHL-S-2.0.html))
+[![License: CERN-OHL-S](https://img.shields.io/badge/License-CERN--OHL--S%20v2-red?style=for-the-badge)]([https://ohwr.org/cern_ohl_s_v2](https://spdx.org/licenses/CERN-OHL-S-2.0.html))
 <br>
 
 <img src="https://github.com/user-attachments/assets/9677f1f1-13a4-4ad5-a540-0e663ec7b815" alt="Flowers" style="width:auto;">
