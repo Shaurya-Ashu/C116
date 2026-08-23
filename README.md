@@ -1,16 +1,29 @@
-# C116
-A tiny tine mcu . So it is the smallest DEV Board I have built till now. It is powered by STM 32F0 micro controller and offers a built-in ToF sensor , 2 x 2 RGB matrix , 3 GPIO's & UART all under a USB-C connector.
+<div align="center">
+<h1>C116</h1><br>
+  
+A tiny tine MCU. It is powered by STM 32F0 micro controller and offers a built-in ToF sensor , 2 x 2 RGB matrix , 3 GPIO's & UART all under a USB-C connector. <br>
 
-# why I build it
-Because it's amazing, just imagine a tiny board of approximately 1 cm x 1 cm can fit STM power dev boadr.
-and also I love making small things and I always wanted to build a tiny MCU.
+
+
+![AutoDesk](https://img.shields.io/badge/autodesk-%23000000.svg?style=for-the-badge&logo=autodesk&logoColor=white)
+[![License: CERN-OHL-S](https://img.shields.io/badge/License-CERN--OHL--S%20v2-red)]([https://ohwr.org/cern_ohl_s_v2](https://spdx.org/licenses/CERN-OHL-S-2.0.html))
+<br>
+
+<img src="https://github.com/user-attachments/assets/9677f1f1-13a4-4ad5-a540-0e663ec7b815" alt="Flowers" style="width:auto;">
+</div>
+<br>
+
+
+
 
 # Zine 
 <img width="540" height="828" alt="Frame 4-2" src="https://github.com/user-attachments/assets/01c87d38-8104-43de-9764-c05811f4c034" />
 
+# why I build it
+Because it's amazing, just imagine a tiny board of approximately 1 cm x 1 cm can fit STM32 powered dev board.
+and also I love making small things and I always wanted to build a tiny MCU. It has so much functionality and it's fully open source so anyone can alter it to their requirement and build their own dev board around it.
 
 # parts & schematic
-
 I've chosen STM32F042T6Y6TR as the brain of this project , as it offer two of the most important thing I needed for this project i.e. the size (2.6 x 2.7mm) & it offers USB interface .
 It comes in a pakage of WLCSP36 and offers 36 ball pins arrange in a matrix of 6 by 6 with pitch of 0.4mm.
 With flash memories of 32 Kbytes and an internal clock for usb make it even greater choice for this project .
