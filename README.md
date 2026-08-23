@@ -93,9 +93,11 @@ Bottom layer - signals
 
 
 # PCB ordering
-If you are ordering from JLCPCB you need to select the advanced PCB option with four layer configuration the minimum via size should be 0.2mm and it should filled and caped .
+It is a HDI PCB so it required some special tuning before ordering
+Trace width is 0.1mm/4mil
+Via size is 0.25mm OD & 0.1MM ID
+Via should be filled and caped
 
-Choose accordingly with your PCB manufacturer.
 
 # Firmware
 To upload a code through USB-C we need to bring it in DUF mode and to do so hold the boot button and then press the reset button for a few seconds and release the reset button and then release the boo button , it will bring our MCU into DUF mode.
